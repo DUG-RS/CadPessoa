@@ -1,0 +1,226 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 2
+  object sbrodape: TStatusBar
+    Height = 22.000000000000000000
+    Position.Y = 438.000000000000000000
+    ShowSizeGrip = True
+    Width = 320.000000000000000000
+    object lblStatus: TLabel
+      Align = alClient
+      Height = 22.000000000000000000
+      Width = 320.000000000000000000
+      Trimming = ttCharacter
+    end
+  end
+  object sbtitulo: TStatusBar
+    Align = alTop
+    Height = 33.000000000000000000
+    ShowSizeGrip = True
+    Width = 320.000000000000000000
+    object lblTitulo: TLabel
+      Align = alClient
+      Height = 33.000000000000000000
+      Text = 'Cadastro'
+      TextAlign = taCenter
+      Width = 320.000000000000000000
+      WordWrap = False
+      Trimming = ttCharacter
+    end
+    object btnSalvar: TSpeedButton
+      Height = 31.000000000000000000
+      Position.X = 264.000000000000000000
+      Text = 'Salvar'
+      Trimming = ttCharacter
+      Width = 56.000000000000000000
+      OnClick = btnSalvarClick
+    end
+  end
+  object Label1: TLabel
+    Height = 21.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 56.000000000000000000
+    Text = 'CPF'
+    Width = 82.000000000000000000
+    Trimming = ttCharacter
+  end
+  object edtDocumento: TEdit
+    TabOrder = 3
+    KeyboardType = vktNumberPad
+    Position.X = 26.000000000000000000
+    Position.Y = 80.000000000000000000
+    Width = 139.000000000000000000
+    Height = 31.000000000000000000
+    KillFocusByReturn = False
+    object btnPesquisa: TSpeedButton
+      Align = alFitRight
+      Height = 31.000000000000000000
+      Position.X = 99.000000000000000000
+      StyleLookup = 'searchtoolbuttonbordered'
+      Text = 'btnPesquisa'
+      Trimming = ttCharacter
+      Width = 40.000000000000000000
+      OnClick = btnPesquisaClick
+    end
+  end
+  object Label2: TLabel
+    Height = 19.000000000000000000
+    Position.X = 27.000000000000000000
+    Position.Y = 114.000000000000000000
+    Text = 'Nome'
+    Width = 82.000000000000000000
+    Trimming = ttCharacter
+  end
+  object edtNome: TEdit
+    TabOrder = 5
+    Position.X = 28.000000000000000000
+    Position.Y = 134.000000000000000000
+    Width = 179.000000000000000000
+    Height = 31.000000000000000000
+    KillFocusByReturn = False
+    object btnFoto: TSpeedButton
+      Action = TakePhotoFromCameraAction1
+      Height = 31.000000000000000000
+      Position.X = 139.000000000000000000
+      StyleLookup = 'cameratoolbuttonbordered'
+      Trimming = ttCharacter
+      Width = 40.000000000000000000
+    end
+  end
+  object imgFoto: TImage
+    Height = 103.000000000000000000
+    Position.X = 210.000000000000000000
+    Position.Y = 61.000000000000000000
+    Width = 105.000000000000000000
+  end
+  object lblRua: TLabel
+    Height = 19.000000000000000000
+    Position.X = 27.000000000000000000
+    Position.Y = 172.000000000000000000
+    Text = 'Rua'
+    Width = 82.000000000000000000
+    Trimming = ttCharacter
+  end
+  object edtRua: TEdit
+    TabOrder = 8
+    Position.X = 28.000000000000000000
+    Position.Y = 192.000000000000000000
+    Width = 285.000000000000000000
+    Height = 31.000000000000000000
+    TextPrompt = 'Numero do Documento'
+    KillFocusByReturn = False
+  end
+  object lblCidade: TLabel
+    Height = 19.000000000000000000
+    Position.X = 27.000000000000000000
+    Position.Y = 231.000000000000000000
+    Text = 'Cidade'
+    Width = 82.000000000000000000
+    Trimming = ttCharacter
+  end
+  object edtCidade: TEdit
+    TabOrder = 10
+    Position.X = 27.000000000000000000
+    Position.Y = 251.000000000000000000
+    Width = 150.000000000000000000
+    Height = 31.000000000000000000
+    KillFocusByReturn = False
+  end
+  object cbUF: TComboBox
+    DisableFocusEffect = False
+    Height = 31.000000000000000000
+    Position.X = 184.000000000000000000
+    Position.Y = 250.000000000000000000
+    TabOrder = 11
+    Width = 121.000000000000000000
+    object TListBoxItem
+      Height = 19.000000000000000000
+      Text = 'AL'
+      Width = 19.000000000000000000
+    end
+    object TListBoxItem
+      Height = 19.000000000000000000
+      Text = 'SP'
+      Width = 19.000000000000000000
+    end
+    object TListBoxItem
+      Height = 19.000000000000000000
+      Text = 'RS'
+      Width = 19.000000000000000000
+    end
+    object TListBoxItem
+      Height = 19.000000000000000000
+      Text = 'MG'
+      Width = 19.000000000000000000
+    end
+  end
+  object lblUF: TLabel
+    Height = 19.000000000000000000
+    Position.X = 185.000000000000000000
+    Position.Y = 230.000000000000000000
+    Text = 'UF'
+    Width = 82.000000000000000000
+    Trimming = ttCharacter
+  end
+  object lblCEP: TLabel
+    Height = 19.000000000000000000
+    Position.X = 27.000000000000000000
+    Position.Y = 295.000000000000000000
+    Text = 'CEP'
+    Width = 82.000000000000000000
+    Trimming = ttCharacter
+  end
+  object edtCEP: TEdit
+    TabOrder = 14
+    KeyboardType = vktNumberPad
+    Position.X = 27.000000000000000000
+    Position.Y = 315.000000000000000000
+    Width = 150.000000000000000000
+    Height = 31.000000000000000000
+    KillFocusByReturn = False
+  end
+  object ActionList1: TActionList
+    Left = 160
+    Top = 40
+    object TakePhotoFromCameraAction1: TTakePhotoFromCameraAction
+      OnDidFinishTaking = TakePhotoFromCameraAction1DidFinishTaking
+    end
+    object TakePhotoFromLibraryAction1: TTakePhotoFromLibraryAction
+    end
+  end
+  object ADConnection1: TADConnection
+    Params.Strings = (
+      'Database=Z:\DUG\ex1\CADPESSOA.DB'
+      'DriverID=SQLite')
+    LoginPrompt = False
+    BeforeConnect = ADConnection1BeforeConnect
+    Left = 56
+    Top = 360
+  end
+  object ADPhysSQLiteDriverLink1: TADPhysSQLiteDriverLink
+    Left = 176
+    Top = 360
+  end
+  object ADQuery1: TADQuery
+    Connection = ADConnection1
+    Left = 272
+    Top = 360
+  end
+  object ADGUIxWaitCursor1: TADGUIxWaitCursor
+    Provider = 'FMX'
+    ScreenCursor = gcrHourGlass
+    Left = 216
+    Top = 304
+  end
+end
